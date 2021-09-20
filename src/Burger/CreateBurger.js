@@ -8,6 +8,8 @@ import Tomatoes from "./BurgerComponents/Tomatoes";
 
 export default function CreateBurger(props) {
     const BurgerStack = props.burgerStack.map((item, index) => {
+
+      // arranging burger stack
       switch (item) {
         case 'Cheese':
           return <Cheese key={index} />;
